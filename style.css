@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.jeu-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+#choix {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+#choix button {
+  background-color: #ecf0f1;
+  border: none;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#choix button:hover {
+  background-color: #3498db;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+#resultats {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#resultats p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+#reset {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+#reset:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(231, 76, 60, 0.3);
+}
+
+@media (max-width: 600px) {
+  .jeu-container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #choix button {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  #resultats {
+    min-height: 180px;
+    padding: 1rem;
+  }
+
+  #resultats p {
+    font-size: 1rem;
+  }
+}
