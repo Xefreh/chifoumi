@@ -88,6 +88,10 @@ h1 {
   box-shadow: 0 5px 10px rgba(231, 76, 60, 0.3);
 }
 
+#resultats span {
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   .jeu-container {
     padding: 1.5rem;

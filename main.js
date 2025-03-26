@@ -45,8 +45,10 @@ function mettre_a_jour_score() {
   resultats.innerHTML = `
     <p>Votre choix : ${choix_utilisateur}</p>
     <p>Choix de l'ordinateur : ${choix_ordinateur}</p>
-    <p>Résultat : ${resultat}</p>
+    <p>Résultat : <span>${resultat}</span></p>
     
+
+
     <p>Victoires : ${victoires}</p>
     <p>Défaites : ${defaites}</p>
     <p>Égalités : ${egalites}</p>
@@ -60,7 +62,7 @@ function reset() {
   victoires = 0;
   defaites = 0;
   egalites = 0;
-  resultats.innerHTML = "";
+  mettre_a_jour_score();
 }
 
 pierre_button.addEventListener("click", jouer);
@@ -68,3 +70,7 @@ feuille_button.addEventListener("click", jouer);
 ciseaux_button.addEventListener("click", jouer);
 
 reset_button.addEventListener("click", reset);
+
+window.addEventListener("DOMContentLoaded", () => {
+  mettre_a_jour_score();
+});
